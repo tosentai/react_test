@@ -25,7 +25,6 @@
     subgraph L5["List Components"]
         direction TB
         ContactRow["ContactRow<br/>───────<br/><b>Props:</b> book, isEditing, editData,<br/>editErrors, handlers<br/><b>Renders:</b> Inline editing with validation,<br/>error messages in red<br/><i>Presentational - no state</i>"]
-        EmptyState["Empty State<br/>───────<br/><i>'No data to display'</i><br/><i>Conditional render</i>"]
     end
 
     H1 -.->|consumes| AddressBook
@@ -36,15 +35,14 @@
     AddressBook --> F3
 
     F3 --> ContactRow
-    F3 --> EmptyState
 
-    style H1 fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style AddressBook fill:#e8f4f8,stroke:#333,stroke-width:2px
-    style F1 fill:#fff4e6,stroke:#333,stroke-width:1px
-    style F2 fill:#fff4e6,stroke:#333,stroke-width:1px
-    style F3 fill:#fff4e6,stroke:#333,stroke-width:1px
-    style ContactRow fill:#f0f0f0,stroke:#333,stroke-width:1px
-    style EmptyState fill:#f0f0f0,stroke:#333,stroke-width:1px
+    style H1 fill:#000,stroke:#000,stroke-width:2px
+    style App fill:#000,stroke:#000,stroke-width:2px
+    style AddressBook fill:#000,stroke:#000,stroke-width:2px
+    style F1 fill:#000,stroke:#000,stroke-width:1px
+    style F2 fill:#000,stroke:#000,stroke-width:1px
+    style F3 fill:#000,stroke:#000,stroke-width:1px
+    style ContactRow fill:#000,stroke:#000,stroke-width:1px
 
 ```
 
